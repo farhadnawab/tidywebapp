@@ -12,6 +12,20 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
 }
+::-webkit-input-placeholder { /* Edge */
+    color: #66696e;
+    opacity: 0.5;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #66696e;
+    opacity: 0.5;
+}
+
+::placeholder {
+    color: #66696e;
+    opacity: 0.5;
+}
 
 /** Buttons **/
 .btn {
@@ -44,7 +58,7 @@ body {
 }
 .form-control.form-input-target {
     padding-right: 35px;
-    background-image: url("https://via.placeholder.com/18x18");
+    background-image: url("/assets/img/ic-location-target.svg");
     background-repeat: no-repeat;
     background-position: right 10px center;
 }
@@ -56,7 +70,7 @@ body {
     height: 0;
 }
 .radio-wrap input[type=radio] + label {
-    padding: 10px 17px 11px 8px;
+    padding: 11px 15px 11px 8px;
     border-radius: 4px;
     letter-spacing: -0.21px;
     color: #0f141a;
@@ -102,7 +116,7 @@ body {
 }
 .modal .modal-container .modal-content {
     width: 100%;
-    max-width: 380px;
+    max-width: 360px;
     border-radius: 8px;
     box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 16px 24px 2px rgba(0, 0, 0, 0.14);
     background-color: #f0f2f5;
@@ -114,11 +128,11 @@ body {
     right: 15px;
 }
 .modal .modal-container .modal-content .modal-content-top {
-    padding: 15px 40px 30px;
+    padding: 14px 40px 31px;
     text-align: center;
 }
 .modal .modal-container .modal-content .modal-content-bottom {
-    padding: 15px 40px 30px;
+    padding: 22px 40px 32px;
     border-radius: 8px;
     box-shadow: 0 -1px 0 0 rgba(214, 219, 224, 0.2);
     background-color: #ffffff;
@@ -192,8 +206,8 @@ body {
 
 .modal.booking-web-small-0 .modal-content-bottom .choose-service {
     margin-top: 24px;
+    margin-bottom: 94px;
     text-align: center;
-    min-height: 200px;
 }
 .modal.booking-web-small-0 .modal-content-bottom .choose-service h4 {
     font-size: 14px;
